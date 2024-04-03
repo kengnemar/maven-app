@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!-- Maven settings for CI -->
+<settings
+        xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd"
+>
+<!--    <profiles>-->
+<!--        &lt;!&ndash; GPG settings &ndash;&gt;-->
+<!--        <profile>-->
+<!--            <id>gpg</id>-->
+<!--            <activation>-->
+<!--                <activeByDefault>true</activeByDefault>-->
+<!--            </activation>-->
+<!--            <properties>-->
+<!--                <gpg.executable>gpg</gpg.executable>-->
+<!--                &lt;!&ndash; Load passphrase from env variable &ndash;&gt;-->
+<!--                <gpg.passphrase>${env.INPUT_GPG_PASSPHRASE}</gpg.passphrase>-->
+<!--            </properties>-->
+<!--        </profile>-->
+<!--    </profiles>-->
+
+    <servers>
+        <!-- Sonatype OSSRH credentials -->
+        <server>
+            <id>http://34.207.144.72:8081/repository/maven-hosted-repo/</id>
+            <!-- Load credentials from env variables -->
+            <username>nexus-user</username>
+            <password>password</password>
+        </server>
+    </servers>
+</settings>
