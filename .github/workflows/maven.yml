@@ -20,7 +20,7 @@ jobs:
       - name: Build with Maven
         run: mvn package --file pom.xml
       - name: Nexus Repo Publish
-        uses: sonatype-nexus-community/nexus-repo-github-action@master
+        uses: actions/setup-java@v1
         with:
           serverUrl: http://34.207.144.72:8081/repository/maven-hosted-repo/
           username: nexus-user
