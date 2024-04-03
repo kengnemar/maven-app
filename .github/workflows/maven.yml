@@ -32,9 +32,9 @@ jobs:
       - name: Nexus Repo Publish
         run: mvn -B deploy
         with:
-          serverUrl: http://34.207.144.72:8081/repository/maven-hosted-repo/
-          nexus_username: nexus-user
-          nexus_password: password
+          serverUrl: ${{secret.SERVER_URL}}
+          nexus_username: ${{secret.NEXUS_USERNAME}}
+          nexus_password: ${{secret.NEXUS_PASSWORD}}
 
       # Optional: Uploads the full dependency graph to GitHub to improve the quality of Dependabot alerts this repository can receive
       - name: Update dependency graph
