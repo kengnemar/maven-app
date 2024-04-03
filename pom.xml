@@ -83,15 +83,15 @@
   <distributionManagement>
     <repository>
       <id>nexus-releases</id>
-      <url>http://34.207.144.72:8081/repository/maven-hosted-repo/</url>
+      <url>localhost:8081</url>
     </repository>
-<!--    <snapshotRepository>-->
-<!--      <id>nexus-snapshots</id>-->
-<!--      <url>http://34.207.144.72:8081/repository/maven-snapshots/</url>-->
-<!--      <snapshots>-->
-<!--        <enabled>true</enabled>-->
-<!--        <updatePolicy>always</updatePolicy>-->
-<!--      </snapshots>-->
-<!--    </snapshotRepository>-->
+    <snapshotRepository>
+      <id>nexus-snapshots</id>
+      <url>localhost:8081</url>
+      <snapshots>
+        <enabled>true</enabled>
+        <updatePolicy>always</updatePolicy>
+      </snapshots>
+    </snapshotRepository>
   </distributionManagement>
 </project>
