@@ -25,7 +25,7 @@ jobs:
           serverUrl: ${{ secrets.NEXUS_SERVER_URL }}
           username: ${{ secrets.NEXUS_USER_NAME }}
           password: ${{ secrets.NEXUS_PASSWORD }}
-          format: maven3
+          format: maven2
           repository: maven-releases
           coordinates: groupId=com.example artifactId=app version=1.0.0
           assets: extension=jar

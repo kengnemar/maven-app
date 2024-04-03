@@ -81,9 +81,17 @@
   </build>
 <!--  location of the maven repository-->
   <distributionManagement>
-    <snapshotRepository>
-      <id>nexus-snapshots</id>
-      <url>http://34.207.144.72:8081/repository/maven-snapshots/</url>
-    </snapshotRepository>
+    <repository>
+      <id>nexus-releases</id>
+      <url>http://34.207.144.72:8081/repository/maven-releases/</url>
+    </repository>
+<!--    <snapshotRepository>-->
+<!--      <id>nexus-snapshots</id>-->
+<!--      <url>http://34.207.144.72:8081/repository/maven-snapshots/</url>-->
+<!--      <snapshots>-->
+<!--        <enabled>true</enabled>-->
+<!--        <updatePolicy>always</updatePolicy>-->
+<!--      </snapshots>-->
+<!--    </snapshotRepository>-->
   </distributionManagement>
 </project>
