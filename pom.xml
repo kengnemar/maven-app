@@ -83,7 +83,7 @@
   <distributionManagement>
     <repository>
       <id>nexus-releases</id>
-      <url>http://34.207.144.72:8081/repository/maven-releases/</url>
+      <url>http://34.207.144.72:8081/repository/maven-hosted-repo/</url>
     </repository>
 <!--    <snapshotRepository>-->
 <!--      <id>nexus-snapshots</id>-->
